@@ -56,8 +56,36 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.main-header {
+  height: 785px;
+  background: #121313 url(../img/main-header-image.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.main-container {
+  margin: 0 auto;
+  width: 1000px;
+}
+
+.main-page-about {
+  height: 495px;
+  color: #ffffff;
+  background: #3eaaf5 url(../img/box-about-image.jpg) no-repeat center;
+  background-size: cover;
+  box-shadow: inset 0 495px rgba(0, 0, 0, 0.7);
+}
 
 
+.main-map {
+  height: 440px;
+  background: #232020 url(../img/map-image.jpg) no-repeat center;
+  background-size: cover;
+}
+
+.main-footer {
+  height: 350px;
+  background-color: #232020;
+}
 
 
 
