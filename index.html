@@ -71,53 +71,63 @@
     <main class="main-page-content">
       <div class="main-container">
         <section class="search-photos">
-          <form action="#" class="search-all" method="get">
-            <input type="search" id="main-search">
+          <form action="#" class="main-search" method="get">
+            <input type="search" id="main-search" placeholder="SEARCH ALL GALLERIES">
             <label for="main-search"><i class="icon-search"></i></label>
           </form>
-          <form action="#" class="search-selective" method="get">
-            <label for=""></label>
-            <select name="" id="">
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select>
-            <label for=""></label>
-            <select name="" id="">
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select>
-            <label for=""></label>
-            <select name="" id="">
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select>
-            <label for=""></label>
-            <select name="" id="">
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select>
-            <label for=""></label>
-            <select name="" id="">
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select>
-            <label for=""></label>
-            <select name="" id="">
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select>
-            <label for=""></label>
-            <select name="" id="">
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
-            </select>
+          <form action="http://echo.htmlacademy.ru" class="advanced-search" method="get">
+            <fieldset class="advanced-search-item">
+              <legend>Categories</legend>
+              <select name="categories" title="Categories">
+                <option value="Architecture">Architecture</option>
+                <option value="Landscape">Landscape</option>
+                <option value="Portrait">Portrait</option>
+              </select>
+            </fieldset>
+            <fieldset class="advanced-search-item">
+              <legend>License Type</legend>
+              <select name="license_type" title="License Type">
+                <option value="Creative">Creative</option>
+                <option value="Creative">Creative</option>
+                <option value="Creative">Creative</option>
+              </select>
+            </fieldset>
+            <fieldset class="advanced-search-item">
+              <legend>Image Size</legend>
+              <select name="image_size" title="Image Size">
+                <option value="XXXL">XXXL</option>
+                <option value="XL">XL</option>
+                <option value="M">M</option>
+                <option value="S">S</option>
+              </select>
+            </fieldset>
+            <fieldset class="advanced-search-item">
+              <legend>Color</legend>
+              <input type="color" name="color" placeholder="HEX #F6546A">
+              <button type="button" class="color-adjust-btn">Apply</button>
+            </fieldset>
+            <fieldset class="advanced-search-item">
+              <legend>Browse</legend>
+              <select name="browse" title="Browse">
+                <option value="Most_Viewed">Most Viewed</option>
+                <option value="Most_Liked">Most Liked</option>
+                <option value="Last_Added">Last Added</option>
+              </select>
+            </fieldset>
+            <fieldset class="advanced-search-item">
+              <legend>Location</legend>
+              <select name="location" title="Location">
+                <option value="Worldwide">Worldwide</option>
+                <option value="USA">USA</option>
+                <option value="Russia">Russia</option>
+              </select></fieldset>
+            <fieldset class="advanced-search-item">
+              <legend>Adult Content</legend>
+              <input id="yes-btn" type="radio" value="yes" name="18+" checked>
+              <label class="adult-btn" for="yes-btn">Yes</label>
+              <input id="no-btn" type="radio" value="no" name="18+">
+              <label class="adult-btn" for="no-btn">No</label>
+            </fieldset>
             <button class="main-btn-wide" type="submit">START YOUR SEARCH</button>
           </form>
         </section>
