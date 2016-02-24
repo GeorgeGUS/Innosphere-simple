@@ -20,8 +20,7 @@
   </head>
   <body>
     <!--[if lt IE 8]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-      your browser</a> to improve your experience.</p>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
     <header class="main-header">
@@ -58,80 +57,276 @@
           </ul>
         </nav>
         <section class="main-header-image-text">
-          <span class="image-text-title">Your beautiful handcrafted stock photography marketplace.</span>
+          <p class="image-text-title">Your beautiful handcrafted stock photography marketplace.</p>
           <p class="image-text-content">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi
-            venenatis tortor non ipsum condimentum molestie...
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis tortor non ipsum condimentum molestie...
           </p>
         </section>
         <a href="#" class="main-btn">Know more</a>
       </div>
     </header>
 
-    <main class="main-page-content">
-      <div class="main-container">
-        <section class="search-photos">
-          <form action="#" class="main-search" method="get">
-            <input type="search" id="main-search" placeholder="SEARCH ALL GALLERIES">
-            <label for="main-search"><i class="icon-search"></i></label>
-          </form>
-          <form action="http://echo.htmlacademy.ru" class="advanced-search" method="get">
-            <fieldset class="advanced-search-item">
-              <legend>Categories</legend>
-              <select name="categories" title="Categories">
-                <option value="Architecture">Architecture</option>
-                <option value="Landscape">Landscape</option>
-                <option value="Portrait">Portrait</option>
-              </select>
-            </fieldset>
-            <fieldset class="advanced-search-item">
-              <legend>License Type</legend>
-              <select name="license_type" title="License Type">
-                <option value="Creative">Creative</option>
-                <option value="Creative">Creative</option>
-                <option value="Creative">Creative</option>
-              </select>
-            </fieldset>
-            <fieldset class="advanced-search-item">
-              <legend>Image Size</legend>
-              <select name="image_size" title="Image Size">
-                <option value="XXXL">XXXL</option>
-                <option value="XL">XL</option>
-                <option value="M">M</option>
-                <option value="S">S</option>
-              </select>
-            </fieldset>
-            <fieldset class="advanced-search-item">
-              <legend>Color</legend>
-              <input type="color" name="color" placeholder="HEX #F6546A">
-              <button type="button" class="color-adjust-btn">Apply</button>
-            </fieldset>
-            <fieldset class="advanced-search-item">
-              <legend>Browse</legend>
-              <select name="browse" title="Browse">
-                <option value="Most_Viewed">Most Viewed</option>
-                <option value="Most_Liked">Most Liked</option>
-                <option value="Last_Added">Last Added</option>
-              </select>
-            </fieldset>
-            <fieldset class="advanced-search-item">
-              <legend>Location</legend>
-              <select name="location" title="Location">
-                <option value="Worldwide">Worldwide</option>
-                <option value="USA">USA</option>
-                <option value="Russia">Russia</option>
-              </select></fieldset>
-            <fieldset class="advanced-search-item">
-              <legend>Adult Content</legend>
-              <input id="yes-btn" type="radio" value="yes" name="18+" checked>
-              <label class="adult-btn" for="yes-btn">Yes</label>
-              <input id="no-btn" type="radio" value="no" name="18+">
-              <label class="adult-btn" for="no-btn">No</label>
-            </fieldset>
-            <button class="main-btn-wide" type="submit">START YOUR SEARCH</button>
-          </form>
+    <main class="main-page">
+      <section class="search-photos main-container">
+        <form action="#" class="main-search" method="get">
+          <input type="search" id="main-search" placeholder="SEARCH ALL GALLERIES">
+          <label for="main-search"><i class="icon-search"></i></label>
+        </form>
+        <form action="http://echo.htmlacademy.ru" class="advanced-search" method="get">
+          <fieldset class="advanced-search-item">
+            <legend>Categories</legend>
+            <select name="categories" title="Categories">
+              <option value="Architecture">Architecture</option>
+              <option value="Landscape">Landscape</option>
+              <option value="Portrait">Portrait</option>
+            </select>
+          </fieldset>
+          <fieldset class="advanced-search-item">
+            <legend>License Type</legend>
+            <select name="license_type" title="License Type">
+              <option value="Creative">Creative</option>
+              <option value="Creative">Creative</option>
+              <option value="Creative">Creative</option>
+            </select>
+          </fieldset>
+          <fieldset class="advanced-search-item">
+            <legend>Image Size</legend>
+            <select name="image_size" title="Image Size">
+              <option value="XXXL">XXXL</option>
+              <option value="XL">XL</option>
+              <option value="M">M</option>
+              <option value="S">S</option>
+            </select>
+          </fieldset>
+          <fieldset class="advanced-search-item">
+            <legend>Color</legend>
+            <input type="color" name="color" placeholder="HEX #F6546A">
+            <button type="button" class="color-adjust-btn">Apply</button>
+          </fieldset>
+          <fieldset class="advanced-search-item">
+            <legend>Browse</legend>
+            <select name="browse" title="Browse">
+              <option value="Most_Viewed">Most Viewed</option>
+              <option value="Most_Liked">Most Liked</option>
+              <option value="Last_Added">Last Added</option>
+            </select>
+          </fieldset>
+          <fieldset class="advanced-search-item">
+            <legend>Location</legend>
+            <select name="location" title="Location">
+              <option value="Worldwide">Worldwide</option>
+              <option value="USA">USA</option>
+              <option value="Russia">Russia</option>
+            </select></fieldset>
+          <fieldset class="advanced-search-item">
+            <legend>Adult Content</legend>
+            <input id="yes-btn" type="radio" value="yes" name="18+" checked>
+            <label class="adult-btn" for="yes-btn">Yes</label>
+            <input id="no-btn" type="radio" value="no" name="18+">
+            <label class="adult-btn" for="no-btn">No</label>
+          </fieldset>
+          <button class="main-btn-wide" type="submit">START YOUR SEARCH</button>
+        </form>
+      </section>
+      <section class="page-description main-container">
+        <p class="page-descr-title">
+          Over 40 Million Stock Photos, Vectors, Videos, and Music Tracks
+        </p>
+        <p class="page-descr-content">
+          Search for images anywhere using our award-winning iPad®, iPhone®, and Android® apps. Functional enough to use alone, beautiful enough to show off to clients.
+        </p>
+      </section>
+      <section class="recently main-container">
+        <h2 class="main-page-content-title">Recently uploaded</h2>
+        <figure class="recently-image hor-rect">
+          <figcaption>
+            <span class="photo-title"></span><br>
+            <span class="photo-author"></span>
+          </figcaption>
+          <img src="" alt="">
+        </figure>
+        <figure class="recently-image hor-rect">
+          <figcaption>
+            <span class="photo-title"></span><br>
+            <span class="photo-author"></span>
+          </figcaption>
+          <img src="" alt="">
+        </figure>
+        <figure class="recently-image big-square">
+          <figcaption>
+            <span class="photo-title"></span><br>
+            <span class="photo-author"></span>
+          </figcaption>
+          <img src="" alt="">
+        </figure>
+        <figure class="recently-image vert-rect">
+          <figcaption>
+            <span class="photo-title"></span><br>
+            <span class="photo-author"></span>
+          </figcaption>
+          <img src="" alt="">
+        </figure>
+        <figure class="recently-image small-square">
+          <figcaption>
+            <span class="photo-title"></span><br>
+            <span class="photo-author"></span>
+          </figcaption>
+          <img src="" alt="">
+        </figure>
+        <figure class="recently-image small-square">
+          <figcaption>
+            <span class="photo-title"></span><br>
+            <span class="photo-author"></span>
+          </figcaption>
+          <img src="" alt="">
+        </figure>
+        <a href="#" class="main-btn">Load more</a>
+      </section>
+      <section class="main-page-content main-page-about">
+        <h2 class="main-page-content-title">About Stock photography</h2>
+        <section class="main-container">
+          <h1 class="main-page-about-headline">What is Stock Photography?</h1>
+          <p class="main-page-about-description">
+            Supply of photographs, which are often licensed for specific uses. It is used to fulfill the needs of
+            creative assignments instead of hiring a photographer, often for a lower cost. Today, stock images can be
+            presented in searchable online databases. They can be purchased and delivered online.
+          </p>
+          <a href="#" class="main-btn">Know more</a>
         </section>
-      </div>
+      </section>
+      <section class="testimonials main-container">
+        <h2 class="main-page-content-title">Hear what our customers are saying</h2>
+        <article class="testimonial-item">
+          <span class="quote-icon quote-icon-women"></span>
+          <p class="testimonial-content">
+
+          </p>
+          <div class="testimonial-author">
+            <span class="testimonial-author-name">
+
+            </span><span
+            class="testimonial-author-avatar">
+
+          </span>
+          </div>
+        </article>
+        <article class="testimonial-item">
+          <span class="quote-icon quote-icon-man"></span>
+          <p class="testimonial-content">
+
+          </p>
+          <div class="testimonial-author">
+            <span class="testimonial-author-name">
+
+            </span><span
+            class="testimonial-author-avatar">
+
+          </span>
+          </div>
+        </article>
+      </section>
+
+      <section class="sponsors-slider main-container">
+        <h2 class="main-page-content-title">Our sponsors</h2>
+        <div class="slider-outer">
+          <div class="slider-slides">
+            <img src="" alt="" class="slide-item">
+            <img src="" alt="" class="slide-item">
+            <img src="" alt="" class="slide-item">
+            <img src="" alt="" class="slide-item">
+            <img src="" alt="" class="slide-item">
+          </div>
+        </div>
+        <div class="slider-controls">
+          <div class="btn-prev"></div>
+          <div class="btn-next"></div>
+        </div>
+      </section>
+
+      <section class="team-members main-container">
+        <h2 class="main-page-content-title">Meet our team</h2>
+        <article class="team-member-card">
+          <img src="" alt="" class="team-member-photo">
+          <div class="team-member-name"></div>
+          <div class="team-member-spec"></div>
+          <p class="team-member-description">
+
+          </p>
+          <section class="team-member-social-contacts">
+            <a href="#" class="team-member-soc-btn tw">Twitter</a>
+            <a href="#" class="team-member-soc-btn fb">Facebook</a>
+            <a href="#" class="team-member-soc-btn drib">Dribbble</a>
+            <a href="#" class="team-member-soc-btn pint">Pinterest</a>
+          </section>
+        </article>
+        <article class="team-member-card">
+          <img src="" alt="" class="team-member-photo">
+          <div class="team-member-name"></div>
+          <div class="team-member-spec"></div>
+          <p class="team-member-description">
+
+          </p>
+          <section class="team-member-social-contacts">
+            <a href="#" class="team-member-soc-btn tw">Twitter</a>
+            <a href="#" class="team-member-soc-btn fb">Facebook</a>
+            <a href="#" class="team-member-soc-btn drib">Dribbble</a>
+            <a href="#" class="team-member-soc-btn pint">Pinterest</a>
+          </section>
+        </article>
+        <article class="team-member-card">
+          <img src="" alt="" class="team-member-photo">
+          <div class="team-member-name"></div>
+          <div class="team-member-spec"></div>
+          <p class="team-member-description">
+
+          </p>
+          <section class="team-member-social-contacts">
+            <a href="#" class="team-member-soc-btn tw">Twitter</a>
+            <a href="#" class="team-member-soc-btn fb">Facebook</a>
+            <a href="#" class="team-member-soc-btn drib">Dribbble</a>
+            <a href="#" class="team-member-soc-btn pint">Pinterest</a>
+          </section>
+        </article>
+      </section>
+
+      <div class="main-map"></div>
+
+      <section class="main-page-contacts main-container">
+        <h2 class="main-page-content-title"></h2>
+        <form action="#" class="left-side" method="post">
+          <input type="text" name="first-name" placeholder="First name" required>
+          <input type="text" name="last-name" placeholder="Last name" required>
+          <input type="email" name="email" placeholder="Email" required>
+          <input type="tel" name="phone-number" placeholder="Phone number" required>
+          <textarea name="message" rows="7" cols="60" placeholder="Message" required></textarea>
+          <button class="main-btn-big">Send message</button>
+        </form>
+        <div class="right-side">
+          <section class="main-page-contact-item ">
+            <h3 class="main-page-contact-title"></h3>
+            <div class="contacts-table">
+              <div class="contacts-trow">
+                <div class="contacts-tcol"></div>
+                <div class="contacts-tcol"></div>
+              </div>
+              <div class="contacts-trow">
+                <div class="contacts-tcol"></div>
+                <div class="contacts-tcol"></div>
+              </div>
+              <div class="contacts-trow">
+                <div class="contacts-tcol"></div>
+                <div class="contacts-tcol"></div>
+              </div>
+            </div>
+          </section>
+          <section class="main-page-contact-item">
+            <h3 class="main-page-contact-title"></h3>
+            <p class="main-page-contact-description">
+
+            </p>
+          </section>
+        </div>
+      </section>
     </main>
 
     <footer class="main-footer">
