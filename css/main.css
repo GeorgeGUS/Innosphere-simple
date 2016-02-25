@@ -100,8 +100,8 @@ h2 {
 
 .sprite-icon-behance {
   width: 20px;
-  height: 12px;
-  background-position: -165px -10px;
+  height: 17px;
+  background-position: -165px -5px;
 }
 
 .sprite-icon-facebook {
@@ -237,8 +237,16 @@ a.main-nav-item:active {
   margin-left: 70px;
 }
 .main-nav-icon {
-  padding: 20px 5px;
+  display: block;
+  padding: 18px 6px;
   font-size: 0;
+  text-decoration: none;
+}
+
+.main-nav-icon .sprite {
+  display: inline-block;
+  vertical-align: bottom;
+  font-size: inherit;
 }
 
 .main-header-image-text {
