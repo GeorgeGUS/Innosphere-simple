@@ -438,7 +438,7 @@ a.main-nav-item:active {
 
 .main-page-about {
   box-sizing: border-box;
-  padding-top: 120px;
+
   height: 495px;
   text-align: center;
   color: #ffffff;
@@ -450,20 +450,87 @@ a.main-nav-item:active {
 }
 
 .main-page-about-headline {
-  /*margin: 0;*/
+  margin: 0;
+  padding: 120px 0 45px;
   font-size: 50px;
+  line-height: 1;
   font-weight: 800;
   text-transform: uppercase;
 }
 
 .main-page-about-description {
-  padding: 0 15px;
+  margin: 0;
+  padding: 0 10px 50px;
   font-weight: 300;
   font-size: 18px;
   line-height: 35px;
   word-wrap: break-word;
   /*word-break: break-all;*/
   hyphens: auto;
+}
+
+.testimonial-item {
+  position: relative;
+  padding-left: 80px;
+  display: inline-block;
+  vertical-align: top;
+  width: 420px;
+
+}
+
+.quote-icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #cccccc url("../img/icons/other-icons/icon-quote.png") no-repeat center;
+}
+
+.quote-icon.male {
+  background-color: #3eaaf5;
+}
+
+.quote-icon.female {
+  background-color: #f17398;
+}
+
+.testimonial-content {
+  padding-right: 10px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  word-wrap: break-word;
+  /*word-break: break-all;*/
+  hyphens: auto;
+}
+
+.testimonial-author {
+  position: relative;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 80px;
+  text-transform: uppercase;
+}
+
+.testimonial-author-avatar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: block;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #0e7ac3;
+}
+
+.male .testimonial-author-avatar {
+  background: url("../img/customers/man-avatar.jpg") no-repeat center;
+}
+
+.female .testimonial-author-avatar {
+  background: url("../img/customers/woman-avatar.jpg") no-repeat center;
 }
 
 
@@ -476,6 +543,8 @@ a.main-nav-item:active {
 
 .main-footer {
   height: 350px;
+  text-align: center;
+  color: #ffffff;
   background-color: #232020;
 }
 
@@ -607,8 +676,9 @@ a.main-nav-item:active {
     p,
     h2,
     h3 {
-        orphans: 3;
-        widows: 3;
+      margin: 0;
+      orphans: 3;
+      widows: 3;
     }
 
     h2,
