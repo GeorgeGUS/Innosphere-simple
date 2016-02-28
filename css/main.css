@@ -66,6 +66,7 @@ h2 {
   font-size: 30px;
   line-height: 1;
   text-align: center;
+  letter-spacing: 0.02em;
 }
 /* ============================== MAIN ICONS ================================  */
 
@@ -388,13 +389,16 @@ a.main-nav-item:active {
   font-weight: 300;
   font-size: 25px;
   line-height: 35px;
+  letter-spacing: 0.02em;
 }
 
 .page-descr-content {
   margin: 0;
+  padding: 0 30px;
   font-weight: 300;
   font-size: 18px;
   line-height: 30px;
+  letter-spacing: 0.02em;
 }
 
 .recently {
@@ -402,8 +406,7 @@ a.main-nav-item:active {
 }
 
 .recently-image {
-  margin: 0;
-  margin-right: 10px;
+  margin: 0 10px 0 0;
   position: relative;
   display: inline-block;
   vertical-align: top;
@@ -465,7 +468,6 @@ a.main-nav-item:active {
   font-size: 18px;
   line-height: 35px;
   word-wrap: break-word;
-  /*word-break: break-all;*/
   hyphens: auto;
 }
 
@@ -502,7 +504,6 @@ a.main-nav-item:active {
   font-weight: 300;
   line-height: 30px;
   word-wrap: break-word;
-  /*word-break: break-all;*/
   hyphens: auto;
 }
 
@@ -533,6 +534,51 @@ a.main-nav-item:active {
   background: url("../img/customers/woman-avatar.jpg") no-repeat center;
 }
 
+.sponsors-slider {
+
+}
+
+.team-members {
+  margin-bottom: 160px;
+}
+
+.team-member-card {
+  padding-right: 29px;
+  display: inline-block;
+  width: 314px;
+}
+
+.team-member-card:last-child {
+  padding-right: 0;
+}
+
+.team-member-photo {
+  margin-bottom: 20px;
+  width: 314px;
+  height: 195px;
+}
+
+.team-member-name {
+  padding-bottom: 15px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.team-member-spec {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 36px;
+}
+
+.team-member-description {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 25px;
+  letter-spacing: 0.02em;
+  word-wrap: break-word;
+  hyphens: auto;
+}
 
 .main-map {
   height: 440px;
