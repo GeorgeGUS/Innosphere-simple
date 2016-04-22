@@ -61,6 +61,7 @@ body {
 }
 
 h2 {
+  margin: 0;
   padding: 3em 0 2em;
   font-weight: 300;
   font-size: 30px;
@@ -339,12 +340,13 @@ a.main-nav-item:active {
 .main-search input:focus {
   text-align: left;
   color: #000000;
+  outline: none;
   background: #ffffff;
 }
 
 .advanced-search-item {
   margin-top: 5px;
-  margin-left: 25px;
+  margin-left: 30px;
   margin-right: -4px;
   display: inline-block;
   vertical-align: bottom;
@@ -359,22 +361,40 @@ a.main-nav-item:active {
 .advanced-search-item legend {
   font-weight: 600;
   color: #2f343a;
-
 }
 
-.advanced-search-item select {
-  padding: 5px 10px;
-  width: 225px;
+.advanced-search-item .select-box {
   color: #b3b3b3;
   border: 1px solid #b3b3b3;
   border-radius: 0;
-  background: transparent;
+  overflow: hidden;
+  background: transparent url("../img/icons/select-arrow.png") no-repeat 100% 50%;
+}
+
+.select-box select {
+  padding: 5px 10px;
+  width: 110%;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.select-box select:focus {
+  outline: none;
+}
+
+.select-color {
+  width: 207px;
+}
+
+.select-switch {
+  width: 179px;
 }
 
 .main-btn-wide {
-  margin-left: 25px;
+  margin-left: 30px;
   margin-right: -4px;
-  width: 225px;
+  width: 252px;
   border: 0;
 }
 
@@ -385,7 +405,7 @@ a.main-nav-item:active {
 
 .page-descr-title {
   margin-top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 35px;
   font-weight: 300;
   font-size: 25px;
   line-height: 35px;
@@ -402,6 +422,7 @@ a.main-nav-item:active {
 }
 
 .recently {
+  margin-bottom: 20px;
   text-align: right;
 }
 
@@ -472,12 +493,12 @@ a.main-nav-item:active {
 }
 
 .testimonial-item {
+  box-sizing: border-box;
   position: relative;
   padding-left: 80px;
   display: inline-block;
   vertical-align: top;
-  width: 420px;
-
+  width: 495px;
 }
 
 .quote-icon {
@@ -579,6 +600,32 @@ a.main-nav-item:active {
   word-wrap: break-word;
   hyphens: auto;
 }
+
+.team-member-social-contacts {
+  margin-top: 40px;
+  font-size: 0;
+}
+
+.team-member-soc-btn {
+  margin-right: 15px;
+  display: inline-block;
+  width: 46px;
+  height: 46px;
+}
+
+.team-member-soc-btn.tw {
+  background: url("../img/icons/social-btn-tw.png") no-repeat center;
+}
+.team-member-soc-btn.fb {
+  background: url("../img/icons/social-btn-fb.png") no-repeat center;
+}
+.team-member-soc-btn.drib {
+  background: url("../img/icons/social-btn-db.png") no-repeat center;
+}
+.team-member-soc-btn.pint {
+  background: url("../img/icons/social-btn-pt.png") no-repeat center;
+}
+
 
 .main-map {
   height: 440px;
