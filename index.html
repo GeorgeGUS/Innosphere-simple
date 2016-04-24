@@ -15,16 +15,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800,600,300italic' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/main.css">
-
     <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+
+
   </head>
   <body>
     <!--[if lt IE 8]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
 
-    <header class="main-header">
+    <header id="home" class="main-header">
       <div class="main-container">
         <div class="main-header-top clearfix">
           <section class="header-contacts">
@@ -40,16 +42,16 @@
             <a href="mailto:info@innoshpere.com" class="header-contacts-content">info@innoshpere.com</a>
           </section>
         </div>
-        <nav class="main-nav">
+        <nav id="main-nav">
           <ul class="horiz-nav">
-            <li><a href="#" class="main-nav-item">Homepage</a></li>
-            <li><a href="#" class="main-nav-item">Search</a></li>
-            <li class="active"><span class="main-nav-item">Recent images</span></li>
-            <li><a href="#" class="main-nav-item">About</a></li>
-            <li><a href="#" class="main-nav-item">Testimonials</a></li>
-            <li><a href="#" class="main-nav-item">Sponsors</a></li>
-            <li><a href="#" class="main-nav-item">Team</a></li>
-            <li><a href="#" class="main-nav-item">Contact</a></li>
+            <li><a href="#home" class="main-nav-item">Homepage</a></li>
+            <li><a href="#search" class="main-nav-item">Search</a></li>
+            <li><a href="#recimg" class="main-nav-item">Recent images</a></li>
+            <li><a href="#about" class="main-nav-item">About</a></li>
+            <li><a href="#testimonals" class="main-nav-item">Testimonials</a></li>
+            <li><a href="#sponsors" class="main-nav-item">Sponsors</a></li>
+            <li><a href="#team" class="main-nav-item">Team</a></li>
+            <li><a href="#contact" class="main-nav-item">Contact</a></li>
           </ul>
           <ul class="horiz-nav main-nav-socials">
             <li><a href="#" class="main-nav-icon"><i class="sprite sprite-icon-facebook"></i>Facebook</a></li>
@@ -68,7 +70,7 @@
     </header>
 
     <main class="main-page">
-      <section class="search-box main-container">
+      <section id="search" class="search-box main-container">
         <form action="#" class="main-search" method="get">
           <label for="main-search"><i class="sprite sprite-icon-search"></i></label>
           <input type="search" id="main-search" placeholder="SEARCH ALL GALLERIES">
@@ -107,7 +109,7 @@
           </fieldset>
           <fieldset class="advanced-search-item select-color">
             <legend>Color</legend>
-            <input type="color" name="color" placeholder="HEX #F6546A">
+            <input type="text" name="color" placeholder="HEX #F6546A">
             <button type="button" class="color-adjust-btn">Apply</button>
           </fieldset>
           <fieldset class="advanced-search-item">
@@ -148,7 +150,7 @@
           Search for images anywhere using our award-winning iPad®, iPhone®, and Android® apps. Functional enough to use alone, beautiful enough to show off to clients.
         </p>
       </section>
-      <section class="recently main-container">
+      <section id="recimg" class="recently main-container">
         <h2 class="main-page-content-title">Recently uploaded</h2>
         <div class="recently-image-wrapper">
           <figure class="recently-image hor-rect"><!-- 1 -->
@@ -198,7 +200,7 @@
         </div><!--
         --><a href="#" class="main-btn">Load more</a>
       </section>
-      <h2 class="main-page-content-title main-container">About Stock photography</h2>
+      <h2 id="about" class="main-page-content-title main-container">About Stock photography</h2>
       <section class="main-page-about">
         <section class="main-container">
           <h1 class="main-page-about-headline">What is Stock Photography?</h1>
@@ -210,7 +212,7 @@
           <a href="#" class="main-btn">Know more</a>
         </section>
       </section>
-      <section class="testimonials main-container">
+      <section id="testimonals" class="testimonials main-container">
         <h2 class="main-page-content-title">Hear what our customers are saying</h2>
         <article class="testimonial-item">
           <span class="quote-icon female"></span>
@@ -232,24 +234,28 @@
         </article>
       </section>
 
-      <section class="sponsors-slider main-container">
+      <section id="sponsors" class="main-container">
         <h2 class="main-page-content-title">Our sponsors</h2>
-        <div class="slider-outer">
-          <div class="slider-slides">
-            <a href="#" class="slide-item"><img src="img/icons/sponsor-woo.jpg" width="60" height="40" alt=""></a>
-            <a href="#" class="slide-item"><img src="img/icons/sponsor-envato.jpg" width="145" height="40" alt=""></a>
-            <a href="#" class="slide-item"><img src="img/icons/sponsor-wordpress.jpg" width="40" height="40" alt=""></a>
-            <a href="#" class="slide-item"><img src="img/icons/sponsor-dribbble.jpg" width="105" height="40" alt=""></a>
-            <a href="#" class="slide-item"><img src="img/icons/sponsor-jquery.jpg" width="135" height="40" alt=""></a>
+        <div class="owl-carousel owl-theme">
+          <div class="owl-stage-outer">
+            <div class="owl-stage">
+              <div class="owl-item"><img src="img/icons/sponsor-woo.jpg" width="60" height="40" alt=""></div>
+              <div class="owl-item"><img src="img/icons/sponsor-envato.jpg" width="145" height="40" alt=""></div>
+              <div class="owl-item"><img src="img/icons/sponsor-wordpress.jpg" width="40" height="40" alt=""></div>
+              <div class="owl-item"><img src="img/icons/sponsor-dribbble.jpg" width="105" height="40" alt=""></div>
+              <div class="owl-item"><img src="img/icons/sponsor-jquery.jpg" width="135" height="40" alt=""></div>
+            </div>
           </div>
-        </div>
-        <div class="slider-controls">
-          <div class="btn-prev"></div>
-          <div class="btn-next"></div>
+          <div class="owl-controls">
+            <div class="owl-nav">
+              <div class="owl-prev"></div>
+              <div class="owl-next"></div>
+            </div>
+          </div>
         </div>
       </section>
 
-      <section class="team-members main-container">
+      <section id="team" class="team-members main-container">
         <h2 class="main-page-content-title">Meet our team</h2>
         <article class="team-member-card">
           <img class="team-member-photo" src="img/our-team/patricia_wright.jpg" width="314" height="195" alt=""><br>
@@ -297,8 +303,8 @@
 
       <div class="main-map"></div>
 
-      <section class="main-page-contacts main-container">
-        <h2 class="main-page-content-title"></h2>
+      <section id=contact class="main-page-contacts main-container">
+        <h2 class="main-page-content-title">Get in touch with us</h2>
         <form action="#" class="left-side" method="post">
           <input type="text" name="first-name" placeholder="First name" required>
           <input type="text" name="last-name" placeholder="Last name" required>
@@ -347,8 +353,43 @@
       </div>
     </footer>
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <!-- <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script> -->
+    <!-- <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script> -->
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/owl.carousel.min.js"></script>
+    <script>
+    // Слайдер для фирм
+    $(document).ready(function(){
+      $('.owl-carousel').owlCarousel();
+    });
+    </script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+      // Фикcированная шапка при скролле
+      $("#main-nav").removeClass("default");
+      $(window).scroll(function(){
+        if ($(this).scrollTop() > 120) {
+          $("#main-nav").addClass("default").fadeIn('slow');
+        } else {
+          $("#main-nav").removeClass("default").fadeIn('slow');
+        };
+      });
+
+      // Плавный скролл по якорям
+      $('a[href^="#"]').on('click',function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top
+        }, 900, 'swing', function () {
+            window.location.hash = target;
+        });
+      });
+    });
+  </script>
 
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
