@@ -197,10 +197,17 @@ h2 {
   color: #000000;
 }
 
-.main-nav {
+#main-nav {
+  width: inherit;
   wrap-option: nowrap;
   color: #ffffff;
+  z-index: 999;
   background-color: #232020;
+}
+
+#main-nav.default {
+  position: fixed;
+  top: 0;
 }
 
 .horiz-nav {
@@ -214,11 +221,6 @@ h2 {
   vertical-align: top;
   margin-right: -4px;
 }
-
-.horiz-nav li.active {
-  box-shadow: inset 0 -3px #f17398;
-}
-
 .main-nav-item {
   display: block;
   padding: 20px;
@@ -229,12 +231,14 @@ h2 {
   color: #ffffff;
 }
 
-a.main-nav-item:hover {
-  background-color: #3d3838;
+.main-nav-item:hover {
+  /*background-color: #3d3838;*/
+  box-shadow: inset 0 -3px #f17398;
 }
 
-a.main-nav-item:active {
+.main-nav-item:active {
   background-color: #574f4f;
+  box-shadow: inset 0 -3px #f17398;
 }
 .main-nav-socials {
   margin-left: 70px;
@@ -555,9 +559,7 @@ a.main-nav-item:active {
   background: url("../img/customers/woman-avatar.jpg") no-repeat center;
 }
 
-.sponsors-slider {
-
-}
+/*.sponsors-slider {}*/
 
 .team-members {
   margin-bottom: 160px;
