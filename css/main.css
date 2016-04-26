@@ -198,6 +198,8 @@ h2 {
 }
 
 #main-nav {
+  position: absolute;
+  top: 127px;
   width: inherit;
   wrap-option: nowrap;
   color: #ffffff;
@@ -257,7 +259,7 @@ h2 {
 }
 
 .main-header-image-text {
-  margin-top: 180px;
+  margin-top: 235px;
   padding: 20px;
   width: 420px;
   background-color: rgba(255, 255, 255, 0.8);
@@ -284,15 +286,16 @@ h2 {
   text-transform: uppercase;
   text-decoration: none;
   color: #ffffff;
+  border: none;
   background-color: #f17398;
   box-shadow: 0 3px #db577e;
 }
-.main-btn:hover {
+*[class^="main-btn"]:hover {
   background-color: #d9688a;
   box-shadow: 0 3px #c24e70;
 }
 
-.main-btn:active {
+*[class^="main-btn"]:active {
   background-color: #bf5c7a;
   box-shadow: 0 3px #a84362;
 }
@@ -352,22 +355,25 @@ h2 {
   margin-top: 5px;
   margin-left: 30px;
   margin-right: -4px;
+
   display: inline-block;
   vertical-align: bottom;
   width: 225px;
   height: 65px;
   font-size: 13px;
   letter-spacing: 1px;
-  line-height: 30px;
-  outline: 1px solid black;
+  line-height: 25px;
+  /*outline: 1px solid black;*/
 }
 
 .advanced-search-item legend {
+  padding: 5px 0;
   font-weight: 600;
   color: #2f343a;
 }
 
 .advanced-search-item .select-box {
+  height: 28px;
   color: #b3b3b3;
   border: 1px solid #b3b3b3;
   border-radius: 0;
@@ -383,7 +389,8 @@ h2 {
   background-color: transparent;
 }
 
-.select-box select:focus {
+.select-box select:focus,
+.select-color input:focus {
   outline: none;
 }
 
@@ -391,14 +398,64 @@ h2 {
   width: 207px;
 }
 
+.select-color input {
+  box-sizing: border-box;
+  padding: 0 15px;
+  width: 149px;
+  height: 30px;
+  border: 1px solid #b3b3b3;
+}
+
+.select-color .color-adjust-btn {
+  margin-left: -1px;
+  display: inline-block;
+  vertical-align: top;
+  width: 55px;
+  height: 28px;
+  text-align: center;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #2f343a;
+  border: 1px solid #b3b3b3;
+  background-color: #f1f2f2;
+}
+
 .select-switch {
   width: 179px;
 }
 
+.select-switch input {
+  display: none;
+}
+
+.select-switch label {
+  margin-left: -1px;
+  display: inline-block;
+  vertical-align: top;
+  box-sizing: border-box;
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #b3b3b3;
+  border: 1px solid #b3b3b3;
+}
+
+.select-switch input:checked + label {
+  color: #ffffff;
+  background-color: #2f343a;
+}
+
 .main-btn-wide {
-  margin-left: 30px;
-  margin-right: -4px;
+  vertical-align: top;
+  margin: 40px -4px 0 30px;
   width: 252px;
+  height: 30px;
   border: 0;
 }
 
