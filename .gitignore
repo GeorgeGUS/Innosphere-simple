@@ -5,3 +5,6 @@
 *.xml
 *.db
 *.txt
+/gulpfile.js
+/test.html
+/.gitignore
